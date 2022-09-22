@@ -152,11 +152,13 @@ p#id-selector-2 {
     bottom: 30px;
     left: 30px;
 }
+
 .pos-relative-nudge-down-right {
     position: relative;
     top: 20px;
     left: 20px;
 }
+
 .pos-relative {
     position: relative;
 }
@@ -166,15 +168,18 @@ p#id-selector-2 {
     top: 10px;
     left: 10px;
 }
+
 .pos-absolute-50-50 {
     position: absolute;
     top: 50px;
     left: 50px;
 }
+
 .pos-absolute-120-20 {
     position: absolute;
     top: 20px;
-    left: 120px;      }
+    left: 120px;
+}
 
 .pos-fixed {
     position: fixed;
@@ -185,6 +190,7 @@ p#id-selector-2 {
 .zindex-bring-to-front {
     z-index: 10;
 }
+
 .float-left {
     float: left;
 }
@@ -242,15 +248,18 @@ p#id-selector-2 {
     width: 100px;
     text-align: right;
 }
+
 .rotate-list-items li:nth-child(1) {
     transform: rotate(-10deg);
     background-color: yellow;
 }
+
 .rotate-list-items li:nth-child(2) {
     transform: rotate(2deg);
     background-color: blue;
     color: white;
 }
+
 .rotate-list-items li:nth-child(3) {
     transform: rotate(10deg);
     background-color: red;
@@ -263,17 +272,27 @@ p#id-selector-2 {
 .rotate-table {
     position: relative;
     left: 50px;
-    transform: rotate(15deg);}
+    transform: rotate(15deg);
+}
+
 .rotate-table tr:nth-child(1) {
     background-color: black;
-    color: white;}
+    color: white;
+}
+
 .rotate-table tr:nth-child(n+2) {
-    background-color: yellow;}
+    background-color: yellow;
+}
+
 .rotate-table tr:nth-child(n+5) {
     background-color: blue;
-    color: white;}
+    color: white;
+}
+
 .rotate-table tr:nth-child(n+8) {
-    background-color: red;}
+    background-color: red;
+}
+
 .rotate-table tr:nth-child(n+11) {
     background-color: green;
     color: white;
@@ -292,15 +311,14 @@ p#id-selector-2 {
 }
 
 .gradients-positioned {
-    background:
-            radial-gradient(
-                    at top right, rebeccapurple, orange);
+    background: radial-gradient(
+            at top right, rebeccapurple, orange);
     width: 200px;
     height: 200px;
     color: white;
 }
 
-.animation-keyframes {
+.animation-keyframes1 {
     position: relative;
     top: 0px;
     animation-duration: 7s;
@@ -350,22 +368,27 @@ p#id-selector-2 {
     border-color: black;
     border-style: solid;
 }
+
 .flex-box {
     border: 5px gray solid;
     margin: 10px;
     padding: 10px;
 }
+
 .flex-box-1 {
     background-color: yellow;
 }
+
 .flex-box-2 {
     background-color: blue;
     color: white;
 }
+
 .flex-box-3 {
     background-color: red;
     color: white;
 }
+
 .flex-container1 {
     border-width: 5px;
     border-color: black;
@@ -441,31 +464,141 @@ and (max-width: 600px) {
     .media-query-body {
         background-color: yellow;
     }
+
     .media-query {
         background-color: red;
         color: white;
     }
 }
+
 @media (min-width: 600px)
 and (max-width: 1200px) {
     .media-query-body {
         background-color: blue;
         color: white;
     }
+
     .media-query {
         background-color: yellow;
         color: black;
     }
 }
+
 @media (min-width: 1200px)
 and (max-width: 1800px) {
     .media-query-body {
         background-color: red;
         color: white;
     }
+
     .media-query {
         background-color: blue;
         color: white;
+    }
+}
+
+.gradients-linear1 {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial1 {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-positioned1 {
+    background: radial-gradient(
+            at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+    /* continued on right */
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+
+@media (min-width: 0px)
+and (max-width: 600px) {
+    .media-query1-body {
+        background-color: pink;
+    }
+
+    .media-query1 {
+        background-color: orange;
+        color: lightblue;
+    }
+}
+
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    .media-query1-body {
+        background-color: lightgreen;
+        color: lightgrey;
+    }
+
+    .media-query1 {
+        background-color: lightsalmon;
+        color: palevioletred;
+    }
+}
+
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+    .media-query1-body {
+        background-color: orangered;
+        color: grey;
+    }
+
+    .media-query1 {
+        background-color: cornflowerblue;
+        color: dimgrey;
     }
 }
 
