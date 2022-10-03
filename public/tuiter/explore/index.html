@@ -1,71 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+          crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          rel="stylesheet"/>
     <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 <body>
-<div>&#128269;<input class="wd-search-bar" type="text"
-                     placeholder="Search Tuiter"><a
-        href="explore-settings.html"><span class="wd-gear">&#9881;</span></a></div>
+<div class="container pt-2">
+    <div class="row">
+        <div class="col-2">
+            <div class="list-group">
+                <a href="#"
+                   class="list-group-item list-group-item-action">
+                    Tuiter</a>
+                <a href="#"
+                   class="list-group-item list-group-item-action">
+                    <i class="fa-sharp fa-solid fa-house"></i>
+                    Home</a>
+                <a href="#"
+                   class="list-group-item list-group-item-action active">
+                    <i class="fa-solid fa-hashtag"></i>
+                    Explore</a>
+                <a href="#"
+                   class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications</a>
+                <a href="#"
+                   class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-message"></i>
+                    Messages</a>
+                <a href="#"
+                   class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmarks</a>
+                <a href="#"
+                   class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-list"></i>
+                    Lists</a>
+                <a href="#"
+                   class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-user"></i>
+                    Profile</a>
+                <a href="#"
+                   class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-circle-info"></i>
+                    More</a>
+                <button type="button" class="btn btn-primary mt-3 rounded-pill">Tuit</button>
+            </div>
 
-<div>
-    <ul class="wd-nav-bar">
-        <li class="wd-selected">For you</li>
-        <li class="wd-other-selection">Trending</li>
-        <li class="wd-other-selection">COVID-19</li>
-        <li class="wd-other-selection">News</li>
-        <li class="wd-other-selection">Sports</li>
-        <li class="wd-other-selection">Entertainment</li>
-    </ul>
-</div>
+        </div>
+        <div class="col-6">
+            <input type="text" class="form-control" placeholder="Search Tuiter">
+            <ul class="nav nav-tabs mt-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Tredning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
 
-<div>
-    <h3 class="wd-color-grey wd-font-size-13">Trending in Science</h3><div class="wd-to-the-right">&bull;&bull;&bull;</div>
-    <div><h4>Starship</h4><p class="wd-to-the-right wd-color-grey">&bull;&bull;&bull;</p></div>
-    <h3 class="wd-color-grey wd-font-size-13">55.5K Tuits</h3>
-</div>
+            <div class="position-relative">
+                <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
+                     alt="spaceship" width="100%">
+                <h3 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship</h3>
+            </div>
 
-<div>
-    <h3 class="wd-color-grey wd-font-size-13">Sports - Trending</h3><p class="wd-to-the-right wd-color-grey">&bull;&bull;&bull;</p>
-    <h4>Joe Rogan</h4>
-    <h3 class="wd-color-grey wd-font-size-13">5,218 Tuits</h3>
-    <hr class="wd-color-grey">
-</div>
-
-<div>
-    <div class="wd-side-by-side"><h3>The NewYork Times</h3></div>
-    <div class="wd-side-by-side"><h5 class="wd-color-grey">- Yesterday</h5></div>
-    <div><img class="wd-image" src="../new-york-times.png" alt="new-york-times" width="100px"
-              height="100px"></div>
-    <br><br><br><br>
-    <div>This is a news post that will display some news about the New York Times.</div>
-    <hr>
-</div>
-
-<div>
-    <div class="wd-side-by-side"><h3>Bloomberg Opinion</h3></div>
-    <div class="wd-side-by-side"><h5 class="wd-color-grey">- Yesterday</h5></div>
-    <img class="wd-image" src="../bloomberg.png" alt="bloomberg" width="100px" height="100px">
-    <br><br><br><br>
-    <div>Some news that is very funny.</div>
-    <hr>
-</div>
-
-<div>
-    <h3 class="wd-color-grey wd-font-size-13">COVID-19 - Live</h3>
-    <h2>COVID-19 News and updates for San Jose.</h2>
-    <img class="wd-image" src="../covid19.png" alt="covid19" width="100px" height="100px">
-    <br><br><br><br>
-    <div>Some news that is very funny.</div>
-    <hr>
-</div>
-
-<div>
-    <h3 class="wd-color-grey wd-font-size-13">Trending in United States</h3>
-    <h4>Wonder Bread</h4>
-    <h3 class="wd-color-grey wd-font-size-13">1,259 Tuits</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="text-secondary">Web Development</div>
+                            <div><span class="fw-bolder">ReactJS <i class="fa-solid fa-square-check"></i></span> <span
+                                    class="text-secondary">- 2h</span></div>
+                            <div class="fw-bolder">React.js is a component based front end library
+                                that makes it very
+                                easy to build Single Page Applications or SPAs
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img class="float-end rounded"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                                 alt="react" height="100px">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9">
+                            <div><span class="fw-bolder">JavaScript <i class="fa-solid fa-square-check"></i></span> <span
+                                    class="text-secondary">- 2h</span></div>
+                            <div class="fw-bolder">JavaScript is programming language that can run
+                                on browsers as well as desktops
+                            </div>
+                            <div class="text-secondary">123K Tuits</div>
+                        </div>
+                        <div class="col-3">
+                            <img class="float-end rounded"
+                                 src="https://learnbatta.com/assets/images/javascript/javascript-logo.png"
+                                 alt="js" height="100px">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="text-secondary">Web Development</div>
+                            <div class="fw-bolder">jQuery
+                            </div>
+                            <div class="text-secondary">23K Tuits</div>
+                        </div>
+                        <div class="col-3">
+                            <img class="float-end rounded"
+                                 src="https://ivazz.com/wp-content/uploads/2021/05/jquery-1.png"
+                                 alt="jquery" height="100px">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="text-secondary">Web Development</div>
+                            <div><span class="fw-bolder">NodeJS <i class="fa-solid fa-square-check"></i></span><span class="text-secondary"> - 2h</span>
+                            </div>
+                            <div class="text-secondary">40K Tuits</div>
+                        </div>
+                        <div class="col-3">
+                            <img class="float-end rounded"
+                                 src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png"
+                                 alt="nodejs" height="100px">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-4">right</div>
+    </div>
 </div>
 </body>
 </html>
