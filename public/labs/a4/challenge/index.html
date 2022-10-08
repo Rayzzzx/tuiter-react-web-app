@@ -21,38 +21,38 @@
         <div class="col-xxl-2 col-xl-2 col-md-3 col-sm-3">
             <div class="list-group">
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item wd-background-black list-group-item-action">
                     <i class="fa-solid fa-t"></i></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item wd-background-black list-group-item-action">
                     <span style="float:left"><i class="fa-sharp fa-solid fa-house"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Home</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action active">
+                   class="list-group-item wd-background-black list-group-item-action active">
                     <span style="float:left"><i class="fa-solid fa-hashtag"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Explore</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item wd-background-black list-group-item-action">
                     <span style="float:left"><i class="fa-solid fa-bell"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Notifications</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item wd-background-black list-group-item-action">
                     <span style="float:left"><i class="fa-solid fa-message"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Messages</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item wd-background-black list-group-item-action">
                     <span style="float:left"><i class="fa-solid fa-bookmark"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Bookmarks</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item wd-background-black list-group-item-action">
                     <span style="float:left"><i class="fa-solid fa-list"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Lists</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item wd-background-black list-group-item-action">
                     <span style="float:left"><i class="fa-solid fa-user"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Profile</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item wd-background-black list-group-item-action">
                     <span style="float:left"><i class="fa-solid fa-circle-info"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">More</span></a>
                 <button type="button" class="btn btn-primary mt-3 rounded-pill">Tuit</button>
@@ -63,31 +63,49 @@
             <div class="row">
                 <div class="col-11">
                     <div class="position-relative">
-                        <input type="text" class="form-control rounded-pill ps-5"
+                        <input type="text"
+                               class="form-control rounded-pill ps-5 wd-background-black wd-border-none"
                                placeholder="Search Tuiter">
                         <i class="fa-solid fa-magnifying-glass position-absolute wd-search-icon"></i>
                     </div>
                 </div>
                 <div class="col-1 wd-setting-icon"><i
-                        class="fa-solid fa-gear fa-xl text-primary"></i></div>
+                        class="fa-solid fa-gear fa-xl text-dark"></i></div>
             </div>
-            <ul class="nav nav-tabs mt-2">
-                <li class="nav-item">
-                    <a class="nav-link active" href="for-you.html">For you</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="trending.html">Tredning</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sports.html">Sports</a>
-                </li>
-                <li class="nav-item d-none d-md-block">
-                    <a class="nav-link" href="entertainment.html">Entertainment</a>
-                </li>
-            </ul>
+
+            <!--<div>
+                <ul class="nav nav-tabs-dark mt-2">
+                    <li class="nav-item wd-selected">
+                        <a class="nav-link" href="for-you.html">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Tredning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                </ul>
+            </div>-->
+
+            <div>
+                <ul class="wd-nav-bar">
+                    <li class="wd-selected"><a class="nav-link" href="for-you.html">For you</a></li>
+                    <li class="wd-other-selection"><a class="nav-link"
+                                                      href="trending.html">Trending</a></li>
+                    <li class="wd-other-selection"><a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="wd-other-selection"><a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="wd-other-selection"><a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
 
             <div class="position-relative pt-2">
                 <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
@@ -96,14 +114,15 @@
             </div>
 
             <ul class="list-group">
-                <li class="list-group-item">
+                <li class="list-group-item wd-background-black">
                     <div class="row">
                         <div class="col-9">
                             <div class="text-secondary">Web Development</div>
                             <div><span class="fw-bolder">ReactJS <i
                                     class="fa-solid fa-square-check"></i></span> <span
                                     class="text-secondary">- 2h</span></div>
-                            <div class="fw-bolder">React.js is a component based front end library
+                            <div class="fw-bolder wd-text-white">React.js is a component based front
+                                end library
                                 that makes it very
                                 easy to build Single Page Applications or SPAs
                             </div>
@@ -115,13 +134,14 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item wd-background-black">
                     <div class="row">
                         <div class="col-9">
                             <div><span class="fw-bolder">JavaScript <i
                                     class="fa-solid fa-square-check"></i></span> <span
                                     class="text-secondary">- 2h</span></div>
-                            <div class="fw-bolder">JavaScript is programming language that can run
+                            <div class="fw-bolder wd-text-white">JavaScript is programming language
+                                that can run
                                 on browsers as well as desktops
                             </div>
                             <div class="text-secondary">123K Tuits</div>
@@ -133,11 +153,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item wd-background-black">
                     <div class="row">
                         <div class="col-9">
                             <div class="text-secondary">Web Development</div>
-                            <div class="fw-bolder">jQuery
+                            <div class="fw-bolder wd-text-white">jQuery
                             </div>
                             <div class="text-secondary">23K Tuits</div>
                         </div>
@@ -148,11 +168,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item wd-background-black">
                     <div class="row">
                         <div class="col-9">
                             <div class="text-secondary">Web Development</div>
-                            <div><span class="fw-bolder">NodeJS <i
+                            <div><span class="fw-bolder wd-text-white">NodeJS <i
                                     class="fa-solid fa-square-check"></i></span><span
                                     class="text-secondary"> - 2h</span>
                             </div>
@@ -169,18 +189,18 @@
         </div>
         <div class="col-xxl-4 col-xl-2 d-none d-lg-block">
             <ul class="list-group">
-                <li class="list-group-item">
-                    <div class="fw-bolder">Who to follow</div>
+                <li class="list-group-item wd-background-black">
+                    <div class="fw-bolder wd-text-grey">Who to follow</div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item wd-background-black">
                     <div class="row">
                         <div class="col-2"><img class="float-start rounded-circle"
                                                 src="https://upload.wikimedia.org/wikipedia/zh/8/88/Java_logo.png"
                                                 alt="java" height="50px"></div>
                         <div class="col-7">
-                            <div><span class="fw-bolder">Java</span> <i
-                                    class="fa-solid fa-square-check"></i>
-                                <div>@Java</div>
+                            <div><span class="fw-bolder wd-text-white">Java</span> <i
+                                    class="fa-solid fa-square-check wd-text-white"></i>
+                                <div class="wd-text-grey">@Java</div>
                             </div>
                         </div>
                         <div class="col-3">
@@ -189,15 +209,15 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item wd-background-black">
                     <div class="row">
                         <div class="col-2"><img class="float-start rounded-circle"
                                                 src="https://res.cloudinary.com/crunchbase-production/image/upload/j3dbh6kok0dket3uz2vy"
                                                 alt="relativityspace" height="50px"></div>
                         <div class="col-7">
-                            <div><span class="fw-bolder">Relativity Space</span> <i
-                                    class="fa-solid fa-square-check"></i>
-                                <div>@relativityspace</div>
+                            <div><span class="fw-bolder wd-text-white">Relativity Space</span> <i
+                                    class="fa-solid fa-square-check wd-text-white"></i>
+                                <div class="wd-text-grey">@relativityspace</div>
                             </div>
                         </div>
                         <div class="col-3">
@@ -206,15 +226,15 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item wd-background-black">
                     <div class="row">
                         <div class="col-2"><img class="float-start rounded-circle"
                                                 src="https://pbs.twimg.com/profile_images/1552524922768879616/uwIfUsmz_400x400.jpg"
                                                 alt="virgingalactic" height="50px"></div>
                         <div class="col-7">
-                            <div><span class="fw-bolder">Virgin Galactic</span> <i
-                                    class="fa-solid fa-square-check"></i>
-                                <div>@virgingalactic</div>
+                            <div><span class="fw-bolder wd-text-white">Virgin Galactic</span> <i
+                                    class="fa-solid fa-square-check wd-text-white"></i>
+                                <div class="wd-text-grey">@virgingalactic</div>
                             </div>
                         </div>
                         <div class="col-3">
@@ -223,15 +243,15 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item wd-background-black">
                     <div class="row">
                         <div class="col-2"><img class="float-start rounded-circle"
                                                 src="https://images-na.ssl-images-amazon.com/images/I/6111kA98OPL.png"
                                                 alt="nasa" height="50px"></div>
                         <div class="col-7">
-                            <div><span class="fw-bolder">NASA</span> <i
-                                    class="fa-solid fa-square-check"></i>
-                                <div>@NASA</div>
+                            <div><span class="fw-bolder wd-text-white">NASA</span> <i
+                                    class="fa-solid fa-square-check wd-text-white"></i>
+                                <div class="wd-text-grey">@NASA</div>
                             </div>
                         </div>
                         <div class="col-3">
@@ -240,15 +260,15 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item wd-background-black">
                     <div class="row">
                         <div class="col-2"><img class="float-start rounded-circle"
                                                 src="https://pbs.twimg.com/profile_images/1337607516008501250/6Ggc4S5n_400x400.png"
                                                 alt="tesla" height="50px"></div>
                         <div class="col-7">
-                            <div><span class="fw-bolder">Tesla</span> <i
-                                    class="fa-solid fa-square-check"></i>
-                                <div>@Tesla</div>
+                            <div><span class="fw-bolder wd-text-white">Tesla</span> <i
+                                    class="fa-solid fa-square-check wd-text-white"></i>
+                                <div class="wd-text-grey">@Tesla</div>
                             </div>
                         </div>
                         <div class="col-3">

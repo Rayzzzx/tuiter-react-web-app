@@ -1,0 +1,58 @@
+.wd-search-icon {
+    bottom: 10px;
+    left: 10px;
+}
+
+.wd-setting-icon {
+    padding-top: 6px;
+}
+
+.wd-margin-left {
+    margin-left: 25px;
+}
+
+body {
+    background-color: black;
+}
+
+.wd-background-black {
+    background-color: black;
+}
+
+.wd-border-none {
+    border: none;
+}
+
+.wd-text-grey {
+    color: gray;
+}
+
+
+.wd-text-white {
+    color: floralwhite;
+}
+li .wd-selected {
+    border-bottom: solid 4px rgb(29, 161, 242);
+}
+
+.wd-nav-bar {
+    padding: 0;
+}
+
+.wd-nav-bar li {
+    color: darkgray;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 15px;
+    padding: 16px;
+}
+
+.wd-nav-bar .wd-selected {
+    border-bottom: solid 4px rgb(29, 161, 242);
+    color: rgb(29, 161, 242);
+
+}
+
+.wd-other-selection {
+    color: rgb(110, 118, 125);
+}
