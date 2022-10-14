@@ -1,4 +1,4 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
      return(`
 
             <div class="list-group">
@@ -6,35 +6,35 @@ const NavigationSidebar = () => {
                    class="list-group-item list-group-item-action">
                     <i class="fa-solid fa-t"></i></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}">
                     <span style="float:left"><i class="fa-sharp fa-solid fa-house"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Home</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action active">
+                   class="list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}">
                     <span style="float:left"><i class="fa-solid fa-hashtag"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Explore</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item list-group-item-action ${active === 'notification' ? 'active' : ''}">
                     <span style="float:left"><i class="fa-solid fa-bell"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Notifications</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item list-group-item-action ${active === 'message' ? 'active' : ''}">
                     <span style="float:left"><i class="fa-solid fa-message"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Messages</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item list-group-item-action ${active === 'bookmarks' ? 'active' : ''}">
                     <span style="float:left"><i class="fa-solid fa-bookmark"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Bookmarks</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item list-group-item-action ${active === 'lists' ? 'active' : ''}">
                     <span style="float:left"><i class="fa-solid fa-list"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Lists</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}">
                     <span style="float:left"><i class="fa-solid fa-user"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">Profile</span></a>
                 <a href="#"
-                   class="list-group-item list-group-item-action">
+                   class="list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}">
                     <span style="float:left"><i class="fa-solid fa-circle-info"></i></span>
                     <span class="d-none d-xxl-block wd-margin-left">More</span></a>
                 <button type="button" class="btn btn-primary mt-3 rounded-pill">Tuit</button>
