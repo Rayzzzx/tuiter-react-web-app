@@ -315,7 +315,10 @@ const init = () => {
     hideBtn.click(hideHandler);
     showBtn.click(showHandler);
 
-
+/* test for quiz */
+    $("h1").append(" World!")
+    $("H1#hello").remove()
+    $("H1.hi").remove()
 
 }
 $(init);
