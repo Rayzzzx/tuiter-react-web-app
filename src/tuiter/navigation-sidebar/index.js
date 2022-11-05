@@ -9,7 +9,7 @@ const NavigationSidebar = () => {
 
   return (
     <div className="list-group">
-      <Link className="list-group-item">
+      <Link to="/tuiter" className="list-group-item">
         <i className="fa-solid fa-t"></i>
       </Link>
       <Link
@@ -83,7 +83,7 @@ const NavigationSidebar = () => {
         <div className="d-none float-start d-xl-block">&nbsp;Lists</div>
       </Link>
       <Link
-        to="/"
+        to="/tuiter/profile"
         className={`list-group-item
                     ${active === "profile" ? "active" : ""}`}
       >
