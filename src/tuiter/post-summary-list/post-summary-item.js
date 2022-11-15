@@ -11,20 +11,21 @@ const PostSummaryItem = ({
 }) => {
   return (
     <li className="list-group-item">
-      <div className="row">
-        <div className="col-10">
-          <div>
-            {post.userName} . {post.time}
+      <div className="row pb-2">
+        <div className="col-9">
+          <div className="text-secondary">{post.topic}</div>
+          <div className="fw-bolder">
+            {post.userName} <i className="fa-solid fa-circle-check"></i>
+            <span className="text-secondary"> - {post.time}</span>
           </div>
-          <div className="fw-bolder">{post.topic}</div>
-          <div>{post.title}</div>
+          <div className="fw-bolder">{post.title}</div>
         </div>
-        <div className="col-2">
+        <div className="col-3">
           <img
-            alt=""
-            width={70}
-            className="float-end rounded-3"
+            className="float-end rounded"
+            height={100}
             src={`/images/${post.image}`}
+            alt={post.image}
           />
         </div>
       </div>
