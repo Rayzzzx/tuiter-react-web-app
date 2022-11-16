@@ -1,13 +1,10 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import * as service from "./tuits-service";
 
-export const findTuitsThunk = createAsyncThunk(
-  "tuits/findTuits",
-  async (tuit) => {
-    await service.findTuits();
-    return tuit;
-  }
-);
+export const findTuitsThunk = createAsyncThunk("tuits/findTuits", async () => {
+  const tuit = await service.findTuits();
+  return tuit;
+});
 
 export const deleteTuitThunk = createAsyncThunk(
   "tuits/deleteTuit",
